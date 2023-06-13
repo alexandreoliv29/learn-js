@@ -1,0 +1,19 @@
+{
+  "name": "learn",
+  "version": "1.0.0",
+  "description": "projeto para aprender JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "console.log(\"hello word!\")"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandreoliv29/learn-js.git"
+  },
+  "author": "alexandreoliv29",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexandreoliv29/learn-js/issues"
+  },
+  "homepage": "https://github.com/alexandreoliv29/learn-js#readme"
+}
