@@ -13,12 +13,12 @@ console.log(b) */
 
 console.log("Utilizando o spread: \n")
 
-/* function testSpread(a, b, c) {
+ function testSpread(a, b, c) {
     return [a, b, c];
 }
 
 resultado = testSpread('ale', 'davi', 'aena')
-console.log("resultado: ", resultado) */
+console.log("resultado: ", resultado) 
 
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
