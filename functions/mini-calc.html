@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>JS em HTML</h1>
+
+    <button onclick="somar()">+</button>
+    <button onclick="subtrair()">-</button>
+    <button onclick="multiplicar()">*</button>
+    <button onclick="dividir()">/</button>
+
+    <div id="output"></div>
+
+    <script>
+
+        var number = prompt("digite um numero");
+
+        number = parseFloat(number)
+
+        escreve();
+
+        function escreve() {
+            var output = document.querySelector("#output")
+            output.innerHTML = number;
+        }
+
+
+
+        function somar() {
+            var otherNumber = prompt("digite outro numero")
+            otherNumber = parseFloat(otherNumber)
+            number = number + otherNumber
+
+            escreve()
+        }
+
+        function subtrair() {
+            var otherNumber = prompt("digite outro numero")
+            otherNumber = parseFloat(otherNumber)
+            number = number - otherNumber
+
+            escreve()
+        }
+
+        function multiplicar() {
+            var otherNumber = prompt("digite outro numero")
+            otherNumber = parseFloat(otherNumber)
+            number = number * otherNumber
+
+            escreve()
+        }
+
+        function dividir() {
+            var otherNumber = prompt("digite outro numero")
+            otherNumber = parseFloat(otherNumber)
+            number = number / otherNumber
+
+            escreve()
+        }
+
+
+    </script>
+</body>
+
+</html>
