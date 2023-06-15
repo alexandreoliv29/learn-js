@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>JS em HTML</h1>
+
+    <button onclick="calcular('+')">+</button>
+    <button onclick="calcular('-')">-</button>
+    <button onclick="calcular('*')">*</button>
+    <button onclick="calcular('/')">/</button>
+
+    <div id="output"></div>
+
+    <script>
+
+        var number = prompt("digite um numero");
+
+        number = parseFloat(number)
+        var resultado = number;
+        escreve();
+
+        function escreve() {
+            var output = document.querySelector("#output")
+            output.innerHTML = resultado;
+        }
+
+        function calcular(operador) {
+            var otherNumber = prompt("digite outro numero: ")
+            otherNumber = parseFloat(otherNumber)
+
+            if (operador === '+') {
+                resultado = resultado + otherNumber;
+            } else if (operador === '-') {
+                resultado = resultado - otherNumber;
+            } else if (operador === '*') {
+                resultado = resultado * otherNumber;
+            } else if (operador === '/') {
+                resultado = resultado / otherNumber;
+            }
+
+            escreve();
+        }
+
+
+    </script>
+</body>
+
+</html>
